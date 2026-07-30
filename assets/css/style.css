@@ -1234,7 +1234,7 @@ a,
 
 .social-icons a{
     font-size:28px;
-    color:#fff;
+    color:#ff0000;
     transition:.3s;
 }
 
@@ -1267,9 +1267,12 @@ a,
 }
 
 .badge img{
-    width:28px;
-    height:28px;
+    width:32px;
+    height:32px;
+    max-width:32px;
+    max-height:32px;
     object-fit:contain;
+    display:block;
 }
 
 .badge i{
