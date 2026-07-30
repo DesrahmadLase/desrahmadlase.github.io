@@ -998,6 +998,32 @@ ul{
    BACK TO TOP
 =========================== */
 
+/* ===========================
+   MOBILE MENU
+=========================== */
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if(menuToggle && navMenu){
+
+    menuToggle.addEventListener("click",()=>{
+
+        navMenu.classList.toggle("active");
+
+    });
+
+    document.querySelectorAll(".nav-menu a").forEach(link=>{
+
+        link.addEventListener("click",()=>{
+
+            navMenu.classList.remove("active");
+
+        });
+
+    });
+
+}
 #backToTop{
 
     position:fixed;
@@ -1044,5 +1070,55 @@ a,
 .contact-card{
 
     transition:all .3s ease;
+
+}/* ===========================
+   MOBILE NAVIGATION
+=========================== */
+
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    cursor:pointer;
+    color:#b91c1c;
+    transition:.3s;
+}
+
+.menu-toggle:hover{
+    transform:scale(1.1);
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px 0;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-menu{
+        display:none;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#ffffff;
+        flex-direction:column;
+        padding:25px 0;
+        box-shadow:0 10px 25px rgba(0,0,0,.08);
+    }
+
+    .nav-menu.active{
+        display:flex;
+    }
+
+    .nav-menu li{
+        text-align:center;
+        margin:12px 0;
+    }
 
 }
