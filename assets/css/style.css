@@ -1070,7 +1070,7 @@ a,
         padding:20px 0;
     }
 
-        display:block;
+
     }
 
     .nav-menu{
@@ -1282,4 +1282,144 @@ a,
 .badge span{
     font-size:14px;
     font-weight:600;
+}.credentials{
+
+    padding:90px 8%;
+}
+
+.section-header{
+
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-subtitle{
+
+    color:#d32f2f;
+    font-size:.85rem;
+    font-weight:700;
+    letter-spacing:3px;
+}
+
+.credential-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.credential-card{
+
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.credential-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.credential-logo{
+
+    display:flex;
+    justify-content:center;
+    padding:35px;
+    background:#fafafa;
+}
+
+.credential-logo img{
+
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+
+.credential-content{
+
+    padding:28px;
+}
+
+.badge{
+
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:30px;
+    color:#000000;
+    font-size:.8rem;
+    margin-bottom:18px;
+}
+
+.active{
+
+    background:#d32f2f;
+}
+
+.alumni{
+
+    background:#1565c0;
+}
+
+.certified{
+
+    background:#2e7d32;
+}
+
+.credential-content h3{
+
+    margin-bottom:15px;
+}
+
+.credential-content p{
+
+    line-height:1.8;
+    color:#666;
+}
+
+.credential-btn{
+
+    margin-top:25px;
+    width:100%;
+    border:none;
+    background:#b91c1c;
+    color:rgb(255, 255, 255);
+    padding:14px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.credential-btn:hover{
+
+    background:#8b0000;
+}
+
+.credential-modal{
+
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+    z-index:9999;
+    justify-content:center;
+    align-items:center;
+}
+
+.credential-modal img{
+
+    max-width:90%;
+    max-height:90%;
+    border-radius:15px;
+}
+
+.close-modal{
+
+    position:absolute;
+    top:25px;
+    right:40px;
+    color:rgb(165, 5, 5);
+    font-size:45px;
+    cursor:pointer;
 }

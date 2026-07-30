@@ -171,4 +171,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
+});const modal=document.getElementById("credentialModal");
+const modalImg=document.getElementById("credentialImage");
+const closeModal=document.querySelector(".close-modal");
+
+document.querySelectorAll(".credential-btn").forEach(btn=>{
+
+    btn.onclick=()=>{
+
+        modal.style.display="flex";
+        modalImg.src=btn.dataset.image;
+
+    };
+
 });
+
+closeModal.onclick=()=>{
+
+    modal.style.display="none";
+
+};
+
+modal.onclick=(e)=>{
+
+    if(e.target===modal){
+
+        modal.style.display="none";
+
+    }
+
+};
